@@ -1795,47 +1795,43 @@
   </style>
 
   <style>
+    @media screen and (min-width: 470px) and (max-width: 980px) {
+
+      /* Estilos para dispositivos móviles */
+      #menusito {
+        display: none;
+      }
+
+      #buscaricono {
+        display: none;
+      }
+
+      #logoelcomercio {
+        display: none;
+      }
+
+      #botondesuscribirse {
+        display: none;
+      }
+
+      #opt_pagina_inicio {
+        display: block;
+        font-size: 3vh;
+      }
+
+      #opt_buscar {
+        display: block;
+        font-size: 3vh;
+      }
+
+      #opt_suscribete {
+        display: block;
+        font-size: 3vh;
+      }
 
 
 
-
-@media screen and (min-width: 470px) and (max-width: 980px) {
-
-/* Estilos para dispositivos móviles */
-#menusito {
-  display: none;
-}
-
-#buscaricono {
-  display: none;
-}
-
-#logoelcomercio {
-  display: none;
-}
-
-#botondesuscribirse {
-  display: none;
-}
-
-#opt_pagina_inicio {
-  display: block;
-  font-size: 3vh;
-}
-
-#opt_buscar {
-  display: block;
-  font-size: 3vh;
-}
-
-#opt_suscribete {
-  display: block;
-  font-size: 3vh;
-}
-
-
-
-}
+    }
 
     @media screen and (min-width: 981px) {
 
@@ -2711,8 +2707,8 @@
           src="https://streamelements.com/overlay/66a94d2ceebd12750144cbbd/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv"
           width="100%" height="967px" frameborder="0" allowfullscreen style="margin-top: 910vh;"></iframe>
 
-        <div
-          style="display: flex; align-items: center; justify-content: center; position: sticky; bottom: 250px; width: 100%; z-index: 2;">
+        <div id="controles"
+          style="display: flex; align-items: center; justify-content: center; position: absolute; bottom: 360px; width: 100%; z-index: 3;">
           <button id="botonAnterior" onclick="anterior()"
             style="font-size: 30px; left: 10px; color: white; background-color: black; font-weight: bold; margin-right: 300px;">⏪
             Anterior</button>
@@ -2724,6 +2720,12 @@
         <iframe id="iframevideo"
           src="https://streamelements.com/overlay/66a9576a570eaded9b50415e/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv"
           width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+
+
+          
+        <iframe
+        src="https://streamelements.com/overlay/66a96acba8e9c21c237004ca/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv"
+        width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
 
 
         <script>
@@ -2759,16 +2761,16 @@
             const iframe = document.getElementById('iframevideo');
             // Modificar el atributo src
             if (anio == 2020) {
-              iframe.src = 'https://streamelements.com/overlay/66a959da23fdc131272d6bab/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv';
+              iframe.src = 'https://streamelements.com/overlay/66a959a7564c779dcd763b9f/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv';
               anio = 2016;
             } else if (anio == 2016) {
-              iframe.src = 'https://streamelements.com/overlay/66a959a7564c779dcd763b9f/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv';
+              iframe.src = 'https://streamelements.com/overlay/66a9598206799b0abebd767b/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv';
               anio = 2012;
             } else if (anio == 2012) {
-              iframe.src = 'https://streamelements.com/overlay/66a9598206799b0abebd767b/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv';
+              iframe.src = 'https://streamelements.com/overlay/66a95964564c779dcd762d3a/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv';
               anio = 2008;
             } else if (anio == 2008) {
-              iframe.src = 'https://streamelements.com/overlay/66a95964564c779dcd762d3a/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv';
+              iframe.src = 'https://streamelements.com/overlay/66a958ff570eaded9b5101a8/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv';
               anio = 2004;
             } else if (anio == 2004) {
               iframe.src = 'https://streamelements.com/overlay/66a9576a570eaded9b50415e/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv';
@@ -2780,9 +2782,7 @@
         </script>
 
 
-        <iframe
-          src="https://streamelements.com/overlay/66a96acba8e9c21c237004ca/O1CbJ3lf8-4DOyEReJXd5dcQdRjPTovoDAaZbhgHW1d93WEv"
-          width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+
 
         <!--aqui van los videos-->
 
@@ -2951,6 +2951,12 @@
         </div>
       </a></div>
   </div>
+
+
+
+
+
+
   <script data-framer-appear-animation="no-preference"></script>
   <script type="module" async="" data-framer-bundle="" fetchpriority="low"
     src="./marcha_index_files/default_script0.XKOCJHVJ.mjs"></script>
